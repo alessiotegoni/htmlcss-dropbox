@@ -259,6 +259,7 @@ img {
 }
 
 .companies {
+  padding-bottom: 0;
 
   .row .col {
     flex-basis: calc(100% / 3);
@@ -333,6 +334,20 @@ img {
 
   .row .col:nth-child(2) p + p {
     margin-top: 50px;
+  }
+}
+
+.dropbox-for-agency {
+  background-color: var(--hero-bg);
+
+  h2 {
+    color: #610836;
+    max-width: 600px;
+  }
+
+  .btn {
+    --primary-color: var(--white-color);
+    color: var(--black-color);
   }
 
 }
