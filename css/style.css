@@ -9,9 +9,60 @@
 }
 
 :root {
-    --hero-bg: #B4D0E7;
-    --primary-color: #0061FF;
-    --white-color: #fff;
-    --black-color: #000;
+  --hero-bg: #b4d0e7;
+  --primary-color: #0061ff;
+  --white-color: #fff;
+  --black-color: #000;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 17px;
+  color: var(--white-color);
+}
+
+.nav-container {
+  padding: 30px 20px;
+}
+
+.nav-container .nav-col,
+.nav-col .links__list {
+  gap: 40px;
+}
