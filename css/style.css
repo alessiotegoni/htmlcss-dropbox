@@ -36,11 +36,11 @@ img {
   display: flex;
 }
 
-.col-30 {
+.col-35 {
   flex-basis: 35%;
 }
 
-.col-75 {
+.col-65 {
   flex-basis: 65%;
 }
 
@@ -209,4 +209,28 @@ img {
     margin: 10px 0 50px;
   }
 
+}
+
+.find-partner {
+
+  .row {
+    gap: 40px;
+  }
+
+  .row .col-35 {
+    padding-top: 55px;
+  }
+
+  p {
+    margin: 15px 0 30px;
+  }
+
+  .btn {
+    width: fit-content;
+    --primary-color: transparent;
+    --white-color: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-left: 2px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+  }
 }
