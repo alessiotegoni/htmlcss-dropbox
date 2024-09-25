@@ -136,7 +136,7 @@ img {
   }
 }
 
-.buisness-plan {
+.business-plan {
   .filters {
     margin: 60px 0 50px;
     gap: 40px;
@@ -236,7 +236,7 @@ img {
 
 }
 
-.buisness-features {
+.business-features {
   .cards__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,6 +245,14 @@ img {
 
   .card__item p {
     margin-top: 30px;
-  } 
+  }
 
+}
+
+.dropbox-clients {
+
+  h2 {
+    max-width: 600px;
+    margin-bottom: 65px;
+  }
 }
