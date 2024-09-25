@@ -351,3 +351,20 @@ img {
   }
 
 }
+
+.faq {
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  .accordion__item {
+    cursor: pointer;
+    padding: 35px 0;
+    border-top: 1px solid var(--black-color);
+  }
+
+  .accordion__item:last-child {
+    border-bottom: 1px solid var(--black-color);
+  }
+}
