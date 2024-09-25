@@ -15,6 +15,7 @@
   --black-color: #000;
   --w-container: 1200px;
   --cards-list-gap: 50px;
+  --company-bg: #A2D39B;
 }
 
 ul {
@@ -95,6 +96,14 @@ img {
 
 .section {
   padding: calc(150px / 2) 0;
+}
+
+.separator {
+  height: 2px;
+  width: 50px;
+  margin: 30px 0 40px;
+  background-color: rgba(128, 128, 128, 0.25);
+  margin-left: 30px;
 }
 
 .nav-container {
@@ -184,14 +193,6 @@ img {
     margin: 50px 0 30px;
   }
 
-  .card__separator {
-    height: 2px;
-    width: 50px;
-    margin: 30px 0 40px;
-    background-color: rgba(128, 128, 128, 0.25);
-    margin-left: 30px;
-  }
-
   .card__footer li .fa-check {
     color: var(--primary-color);
   }
@@ -255,4 +256,83 @@ img {
     max-width: 600px;
     margin-bottom: 65px;
   }
+}
+
+.companies {
+
+  .row .col {
+    flex-basis: calc(100% / 3);
+  }
+
+  .companies__list {
+    flex-wrap: wrap;
+  }
+
+  .company__item {
+    flex-basis: calc(100% / 2);
+    aspect-ratio: 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--company-bg);
+  }
+
+  img {
+    width: 120px;
+    height: fit-content;
+  }
+
+  .florida-uni img {
+    object-fit: contain;
+  }
+
+
+  .designit {
+    border: 12px solid #D1E9CD;
+  }
+
+  .arizona-state-uni {
+    --company-bg: #61082B;
+  }
+
+  .florida-uni {
+    --company-bg: #0093CE;
+  }
+
+  .topps {
+    --company-bg: #FF1C1C;
+  }
+
+  .world-recycle {
+    --company-bg: #D5001F;
+  }
+
+  .hearst-corp {
+    --company-bg: #B4D0E7;
+  }
+
+  .lonely-planet {
+    --company-bg: #0D2481;
+  }
+
+  .clear-channel {
+    --company-bg: #FFD830;
+  }
+
+  .separator {
+    margin-left: 0;
+  }
+
+  .row .col:nth-child(2) {
+    padding: 30px;
+  }
+
+  .row .col:nth-child(2) {
+    padding: 30px;
+  }
+
+  .row .col:nth-child(2) p + p {
+    margin-top: 50px;
+  }
+
 }
