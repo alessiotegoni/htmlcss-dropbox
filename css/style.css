@@ -233,4 +233,18 @@ img {
     border-left: 2px solid var(--black-color);
     border-bottom: 3px solid var(--black-color);
   }
+
+}
+
+.buisness-features {
+  .cards__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--cards-list-gap);
+  }
+
+  .card__item p {
+    margin-top: 30px;
+  } 
+
 }
