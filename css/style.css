@@ -13,6 +13,7 @@
   --primary-color: #0061ff;
   --white-color: #fff;
   --black-color: #000;
+  --w-container: 1200px;
 }
 
 ul {
@@ -31,8 +32,20 @@ button {
   outline: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .row {
   display: flex;
+}
+
+.col-30 {
+  flex-basis: 35%;
+}
+
+.col-75 {
+  flex-basis: 65%;
 }
 
 .justify-between {
@@ -51,18 +64,68 @@ button {
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn {
   background-color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 10px 17px;
   color: var(--white-color);
 }
 
+.text-xxl {
+  font-size: 5rem;
+}
+
+.text-xl {
+  font-size: 4rem;
+}
+
+.text-lg {
+  font-size: 3rem;
+}
+
+.container {
+  width: var(--w-container);
+  margin: 0 auto;
+}
+
+.container .container-xl {
+  --w-container: 1180px;
+}
+
 .nav-container {
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 
 .nav-container .nav-col,
 .nav-col .links__list {
   gap: 40px;
+}
+
+.hero {
+  background-color: var(--hero-bg);
+}
+
+.hero .container {
+  padding-top: 70px;
+}
+
+.hero .row {
+  margin-top: 40px;
+}
+
+.hero .btn {
+  margin: 20px 0;
+}
+
+.hero .jumbo-img {
+  margin-bottom: -90px;
+}
+
+.hero .fa-arrow-down {
+  margin-bottom: 20px;
 }
